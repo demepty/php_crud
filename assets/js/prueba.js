@@ -10,8 +10,8 @@ function creo() {
         data:{id},
         success:function (data) {
             console.log(data);
-            console.log(data[0].sexo);
-            $("#datito").attr("value",data[0].sexo);
+            console.log(data.nombre);
+            $("#datito").attr("value",data[0].nombre);
         }
     });
 }
