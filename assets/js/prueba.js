@@ -10,7 +10,7 @@ function creo() {
         data:{id},
         success:function (data) {
             console.log(data);
-            console.log(data.nombre);
+            console.log(data[0].nombre);
             $("#datito").attr("value",data[0].nombre);
         }
     });

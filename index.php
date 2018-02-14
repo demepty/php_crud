@@ -23,19 +23,55 @@
     </header>
     <div class="container">        
             <div class="row">
-                <div class="col-md-4">
-                    <h3 class="text-center"> Consulta via ajax</h3>                   
+                <div class="col-md-3">
+                    <h3> Consulta via ajax</h3>                   
                 </div>
                 <div class="col-md-4">
-                    <label for="elid">Id usuario</label>
+                    <div class="form-group">
+                    <label for="elid"> <strong>Id usuario </strong> </label>
                     <input type="text" id="elid">
-                    <button onclick=creo()>  CLICK  </button>                                       
+                    <button class="btn btn-info" onclick=creo()> Click  </button>                                       
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <label for="result"> Resultado</label>
+                <div class="col-md-5">
+                <div class="form-group">
+                    <label for="result"><strong>Resultado</strong></label>
                     <input type="text" id="datito">
+                </div>
                 </div>
             </div>    
     </div>
+    <div class="container menu">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Lista de usuarios</h5>
+                    <p class="card-text">Aqui podras ver los usuario</p>
+                    <a href="#" class="btn btn-primary">Go </a>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Insertar Usuarios</h5>
+                    <p class="card-text">Aqui podras insertar un nuevo usuario</p>
+                    <a href="#" class="btn btn-primary">Go</a>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Eliminar Usuarios</h5>
+                    <p class="card-text">Aqui se eliminan los usuarios.</p>
+                    <a href="#" class="btn btn-primary">Go </a>
+                </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+
 </body>
 </html>
