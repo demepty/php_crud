@@ -14,4 +14,14 @@ function creo() {
             $("#datito").attr("value",data[0].nombre);
         }
     });
+
 }
+
+$(document).ready( function ( ){
+
+    $('#example').DataTable();
+    
+}
+
+
+);
