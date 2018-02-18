@@ -14,8 +14,8 @@
     <script src="assets/js/datatables.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/prueba.js"></script>
-    <script src="assets/js/sweetalert.js"></script>
-    <script src="assets/js/alertas.js"></script>
+    <script src="assets/js/sweetalert.js"></script> <!--Colocamos este js primero y luego el de alertas -->
+    <script src="assets/js/alertas.js"></script>    <!--Colocamos este js creado solo para las alertas -->
     <title>Document</title>
 </head>
 <body>
@@ -33,16 +33,16 @@
                 </div>
                 <div class="col-md-4">
                     <div class="form-group">
-                    <label for="elid"> <strong>Id usuario </strong> </label>
-                    <input type="text" id="elid">
-                    <button class="btn btn-info" onclick=creo()> Click  </button>                                       
+                        <label for="elid"> <strong>Id usuario </strong> </label>
+                        <input type="text" id="elid">
+                        <button class="btn btn-info" onclick=creo()> Click  </button>                                       
                     </div>
                 </div>
                 <div class="col-md-5">
-                <div class="form-group">
-                    <label for="result"><strong>Resultado</strong></label>
-                    <input type="text" id="datito">
-                </div>
+                    <div class="form-group">
+                        <label for="result"><strong>Resultado</strong></label>
+                        <input type="text" id="datito">
+                    </div>
                 </div>
             </div>    
     </div>
@@ -79,44 +79,46 @@
     </div>
 
     <div class="container">
+    <br>
         <div class="row">
-        <legend>Lista de ejemplo</legend>
-        <table id="example" class="display" cellspacing="0" width="100%">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Position</th>
-                <th>Office</th>
-                <th>Age</th>
-                <th>Start date</th>
-                <th>Salary</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Tiger Nixon</td>
-                <td>System Architect</td>
-                <td>Edinburgh</td>
-                <td>61</td>
-                <td>2011/04/25</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Garrett Winters</td>
-                <td>Accountant</td>
-                <td>Tokyo</td>
-                <td>63</td>
-                <td>2011/07/25</td>
-                <td>$170,750</td>
-            </tr>
-           
-        </tbody>
-    </table>
-        
-        
+            <div class="col-sm-12">
+            <legend>Lista de ejemplo</legend>
+                    <table id="example" class= "table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Position</th>
+                                <th>Office</th>
+                                <th>Age</th>
+                                <th>Start date</th>
+                                <th>Salary</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                                <td>61</td>
+                                <td>2011/04/25</td>
+                                <td>$320,800</td>
+                            </tr>
+                            <tr>
+                                <td>Garrett Winters</td>
+                                <td>Accountant</td>
+                                <td>Tokyo</td>
+                                <td>63</td>
+                                <td>2011/07/25</td>
+                                <td>$170,750</td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+            </div>            
         </div>
     </div>
 <div class="container">
+<br>
     <div class="row">
         <button  id="alerta"> Sweet</button>
     </div>
