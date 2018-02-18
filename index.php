@@ -14,6 +14,8 @@
     <script src="assets/js/datatables.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/prueba.js"></script>
+    <script src="assets/js/sweetalert.js"></script>
+    <script src="assets/js/alertas.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -114,6 +116,11 @@
         
         </div>
     </div>
+<div class="container">
+    <div class="row">
+        <button  id="alerta"> Sweet</button>
+    </div>
+</div>
 
 </body>
 </html>
