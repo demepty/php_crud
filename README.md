@@ -7,5 +7,6 @@ Para este proyecto utilizaremos:
  Jquery 3.3.1:      https://jquery.com/
  Datatables:        https://datatables.net/ 
  Sweetalert:        https://sweetalert.js.org
+ FontAwesome:       https://fontawesome.com/
 
 Ademas utilizaremos ajax para el manejo de datos y consultas via get o post

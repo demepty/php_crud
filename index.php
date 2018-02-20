@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css"> <!-- Este css debe ir primero por si se necesita perosnalizar alguna clase de bootstraps-->
     <link rel="stylesheet" href="assets/css/datatables.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
     
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
@@ -16,7 +17,7 @@
     <script src="assets/js/prueba.js"></script>
     <script src="assets/js/sweetalert.js"></script> <!--Colocamos este js primero y luego el de alertas -->
     <script src="assets/js/alertas.js"></script>    <!--Colocamos este js creado solo para las alertas -->
-    <title>Document</title>
+    <title>Crud con php</title>
 </head>
 <body>
     <header>
@@ -120,7 +121,8 @@
 <div class="container">
 <br>
     <div class="row">
-        <button  id="alerta"> Sweet</button>
+        <button  id="alerta"> Sweet <i class="fas fa-user"></i></button>
+        
     </div>
 </div>
 
