@@ -23,30 +23,11 @@
     <header>
     <div class="cabecera">
             <div class="container">
-                <h1> Crud con php jax y bootstrap 4</h1>
+                <h1> Crud con php Ajax y bootstrap 4</h1>
             </div>
     </div>
     </header>
-    <div class="container">        
-            <div class="row">
-                <div class="col-md-3">
-                    <h3> Consulta via ajax</h3>                   
-                </div>
-                <div class="col-md-4">
-                    <div class="form-group">
-                        <label for="elid"> <strong>Id usuario </strong> </label>
-                        <input type="text" id="elid">
-                        <button class="btn btn-info" onclick=creo()> Click  </button>                                       
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="form-group">
-                        <label for="result"><strong>Resultado</strong></label>
-                        <input type="text" id="datito">
-                    </div>
-                </div>
-            </div>    
-    </div>
+    
     <div class="container menu">
         <div class="row">
             <div class="col-md-4">
@@ -54,7 +35,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Lista de usuarios</h5>
                     <p class="card-text">Aqui podras ver los usuario</p>
-                    <a href="#" class="btn btn-primary">Go </a>
+                    <a href="#" class="btn btn-primary elboton">Go </a>
                 </div>
                 </div>
             </div>
@@ -63,7 +44,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Insertar Usuarios</h5>
                     <p class="card-text">Aqui podras insertar un nuevo usuario</p>
-                    <a href="#" class="btn btn-primary">Go</a>
+                    <a href="#" class="btn btn-primary " style="width=100%;">Go</a>
                 </div>
                 </div>
             </div>
@@ -72,59 +53,12 @@
                 <div class="card-body">
                     <h5 class="card-title">Eliminar Usuarios</h5>
                     <p class="card-text">Aqui se eliminan los usuarios.</p>
-                    <a href="#" class="btn btn-primary">Go </a>
+                    <a href="#" class="btn btn-primary go">Go </a>
                 </div>
                 </div>
             </div>
         </div>    
     </div>
-
-    <div class="container">
-    <br>
-        <div class="row">
-            <div class="col-sm-12">
-            <legend>Lista de ejemplo</legend>
-                    <table id="example" class= "table-bordered">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Position</th>
-                                <th>Office</th>
-                                <th>Age</th>
-                                <th>Start date</th>
-                                <th>Salary</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Tiger Nixon</td>
-                                <td>System Architect</td>
-                                <td>Edinburgh</td>
-                                <td>61</td>
-                                <td>2011/04/25</td>
-                                <td>$320,800</td>
-                            </tr>
-                            <tr>
-                                <td>Garrett Winters</td>
-                                <td>Accountant</td>
-                                <td>Tokyo</td>
-                                <td>63</td>
-                                <td>2011/07/25</td>
-                                <td>$170,750</td>
-                            </tr>
-                        
-                        </tbody>
-                    </table>
-            </div>            
-        </div>
-    </div>
-<div class="container">
-<br>
-    <div class="row">
-        <button  id="alerta"> Sweet <i class="fas fa-user"></i></button>
-        
-    </div>
-</div>
 
 </body>
 </html>

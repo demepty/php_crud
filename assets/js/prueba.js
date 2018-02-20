@@ -16,12 +16,4 @@ function creo() {
     });
 
 }
-
-$(document).ready( function ( ){
-
-    $('#example').DataTable();
-    
-}
-
-
-);
+   
