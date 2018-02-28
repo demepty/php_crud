@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,12 +16,6 @@
     <script src="assets/js/prueba.js"></script>
     <script src="assets/js/sweetalert.js"></script> <!--Colocamos este js primero y luego el de alertas -->
     <script src="assets/js/alertas.js"></script>    <!--Colocamos este js creado solo para las alertas -->
-    <script> 
-    $(document).ready(function () {
-        swal("! Bienvenido !","Click para empezar","success");
-    });
-    
-    </script>
     <title>Crud con php</title>
 </head>
 <body>
@@ -35,35 +28,31 @@
     </header>
     
     <div class="container menu">
+    <form action="" method="post">
         <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Lista de usuarios</h5>
-                    <p class="card-text">Aqui podras ver los usuario</p>
-                    <a href="#" class="btn btn-primary elboton">Go </a>
-                </div>
-                </div>
+            <div class="col-xs-8 offset-md-4 text-center">
+                <legend>Ingresa los datos</legend>
+            </div>         
+        </div>
+        <div class="row">
+            <div class="col-xs-8 offset-md-4">
+            <label for=""> Nombre</label>
+            <input type="text" name="nombre" class="form-control">
             </div>
-            <div class="col-md-4">
-                <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Insertar Usuarios</h5>
-                    <p class="card-text">Aqui podras insertar un nuevo usuario</p>
-                    <a href="nuevo.php" class="btn btn-primary " style="width=100%;">Go</a>
-                </div>
-                </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-8 offset-md-4">
+            <label for=""> Categoria</label>
+            <input type="text" name="categoria" class="form-control">
             </div>
-            <div class="col-md-4">
-                <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Eliminar Usuarios</h5>
-                    <p class="card-text">Aqui se eliminan los usuarios.</p>
-                    <a href="#" class="btn btn-primary go">Go </a>
-                </div>
-                </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-8 offset-md-4">
+            <label for=""> Proveedor</label>
+            <input type="text" name="proveedor" class="form-control">
             </div>
-        </div>    
+        </div>
+    </form>    
     </div>
 
 </body>
