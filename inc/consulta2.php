@@ -2,7 +2,7 @@
 include('../conn/conexion.php');
 
 $json   =array();
-$id     =isset($_POST['id']) ? $_POST['id'] : '';;
+$id     =isset($_POST['id']) ? $_POST['id'] : '';
 $sql    ="SELECT * FROM PRODUCTOS ";
 $result =mysqli_query($con,$sql) or die ( "Algo ha ido mal en la consulta a la base de datos");
 
