@@ -14,6 +14,7 @@
     <script src="assets/js/datatables.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/prueba.js"></script>
+    <!--<script src="assets/js/ajaxx.js"></script> -->
     <script src="assets/js/sweetalert.js"></script> <!--Colocamos este js primero y luego el de alertas -->
     <script src="assets/js/alertas.js"></script>    <!--Colocamos este js creado solo para las alertas -->
     <title>Crud con php</title>
@@ -70,14 +71,15 @@
         <div class="row">      
             <div class="col-md-8 offset-md-2">
                 <br>
-                <input type="button" value="Guardar-datos" class="btn btn-primary" style="width:100%">
+                <input type="submit" value="Guardar-datos" class="btn btn-primary" style="width:100%">
             </div>                          
         </div>
     </fieldset>
     </form>   
     <div id="enviando"></div> 
-    <div></div>
+    <div id="resultado"></div>
     </div>
 
+<script src="assets/js/ajaxx.js"></script> 
 </body>
 </html>
