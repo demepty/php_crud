@@ -49,8 +49,7 @@
         <div class="row">
             <div class="col-md-4 offset-md-2">
                 <label for=""> Categoria</label>
-                <select name="categoria" id="" class="form-control">
-                    <option value=""></option>
+                <select name="categoria" id="cat" class="form-control">                    
                 </select>
             </div>
             <div class="col-md-4">

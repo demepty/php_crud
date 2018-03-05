@@ -1,5 +1,22 @@
 
-//$(document).ready(function () {
+$(document).ready(function () {
+var dato=1;
+    $.ajax({
+        type: "POST",
+        url: "inc/consulta2.php",
+        data:{dato},
+        dataType: "json",
+        success: function (response) {
+            console.log(response);
+            $("#cat").append('<option>Seleccionar</option>');
+            $.each(response, function (id, value) {
+            $("#cat").append("<option value='"+value.id_categoria+"'> "+value.desc_categoria+" </option>");     
+            });
+        }
+    });
+
+});
+
     $("#add_producto").submit(function (e) { 
         var datos= $(this).serialize();
         $.ajax({
@@ -22,7 +39,7 @@
         e.preventDefault();
         
     });
-//});
+
 
 
 
