@@ -24,15 +24,16 @@ var dato=1;
             url: "inc/guardar_producto.php",
             data: datos,
             beforeSend:function (objeto) {
-                $("#enviando").html("Enviando....");            
+                $("#enviando").html("Enviando....").fadeOut("slow");; 
+
             },
             success: function (response) {
-                $("#resultado").html(response);
-                location.href=("nuevo.php"); 
+                $("#resultado").html(response).fadeIn();
+               // location.href=("nuevo.php"); 
             },
             error: function (err) {
                 alert("Disculpe, ocurrio un error");
-                location.href=("nuevo.php");
+                //location.href=("nuevo.php");
             }
         });
     
