@@ -1,3 +1,16 @@
+<?php
+include('conn/conexion.php');
+$codigo=mysqli_query($con,"SELECT CONCAT('COD',MAX(id)) AS COD FROM `tblprod` ")or
+die("Problemas en el select:".mysqli_error($con));
+$in='';
+if($dato=mysqli_fetch_assoc($codigo)){
+    $in .='<input type="text" class="form-control" value="'.$dato['COD'].'" disabled>';
+}
+  ?>     
+      
+                      
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,7 +56,8 @@
             </div>
             <div class="col-md-4 ">
                 <label for=""> Codigo</label>
-                <input type="text" name="cod" class="form-control">
+<?php echo $in; ?>
+
             </div>
         </div>
         <div class="row">
@@ -82,3 +96,4 @@
 <script src="assets/js/ajaxx.js"></script> 
 </body>
 </html>
+?>
