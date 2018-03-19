@@ -1,0 +1,35 @@
+.cabecera {
+
+    padding: 2rem 15px;
+    margin-bottom: 1.5rem;
+    color: #cdbfe3;
+    text-align: center;
+    background-color: #563d7c;
+
+}
+
+.menu{
+margin-top: 25px;
+}
+
+.card-body{
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.go{
+    width: 100%;
+
+}
+.elboton{
+    width: 100%;
+}
+.elboton{
+    width: 100%;
+}
+
+div>a{
+    width: 100%;
+}
