@@ -15,7 +15,7 @@ var dato=1;
         }
     });
 
-    var pro=1;
+    var pro=2;
     $.ajax({
         type: "POST",
         url: "inc/consulta2.php",
