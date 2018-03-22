@@ -15,6 +15,20 @@ var dato=1;
         }
     });
 
+    var pro=2;
+    $.ajax({
+        type: "POST",
+        url: "inc/consulta2.php",
+        data:{pro},
+        dataType: "json",
+        success: function (response) {
+            console.log(response);
+            $("#elpro").append('<option>Seleccionar</option>');
+            $.each(response, function (id, value) {
+            $("#elpro").append("<option value='"+value.id_proveedor+"'> "+value.proveedor+" </option>");     
+            });
+        }
+    });
 });
 
     $("#add_producto").submit(function (e) { 

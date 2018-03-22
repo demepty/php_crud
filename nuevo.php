@@ -4,7 +4,7 @@ $codigo=mysqli_query($con,"SELECT CONCAT('COD',MAX(id)) AS COD FROM `tblprod` ")
 die("Problemas en el select:".mysqli_error($con));
 $in='';
 if($dato=mysqli_fetch_assoc($codigo)){
-    $in .='<input type="text" class="form-control" value="'.$dato['COD'].'" disabled>';
+    $in .='<input type="text" class="form-control" value="'.$dato['COD'].'"  disabled>';
 }
   ?>     
       
@@ -52,7 +52,7 @@ if($dato=mysqli_fetch_assoc($codigo)){
         <div class="row">
             <div class="col-md-4 offset-md-2">
                 <label for=""> Nombre</label>
-                <input type="text" name="nombre" class="form-control">
+                <input type="text" name="nombre" class="form-control" required>
             </div>
             <div class="col-md-4 ">
                 <label for=""> Codigo</label>
@@ -63,22 +63,23 @@ if($dato=mysqli_fetch_assoc($codigo)){
         <div class="row">
             <div class="col-md-4 offset-md-2">
                 <label for=""> Categoria</label>
-                <select name="categoria" id="cat" class="form-control">                    
+                <select name="categoria" id="cat" class="form-control" required>                    
                 </select>
             </div>
             <div class="col-md-4">
                 <label for=""> Proveedor</label>
-                <input type="text" name="proveedor" class="form-control">
+                <select name="proveedor" id="elpro" class="form-control" required>                    
+                </select>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4 offset-md-2">
                 <label for=""> Precio</label>
-                <input type="text" name="precio" id="" class="form-control">
+                <input type="text" name="precio" id="" class="form-control" required>
             </div>
             <div class="col-md-4">
                 <label for=""> Cantidad</label>
-                <input type="number" name="quantity" min="1" max="10" class="form-control">
+                <input type="number" name="quantity" min="1" max="10" class="form-control" required>
             </div>            
         </div>
         <div class="row">      
