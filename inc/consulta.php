@@ -1,18 +1,17 @@
 <?php
 include('../conn/conexion.php');
 
-$json   =array();
-$id     =isset($_POST['id']) ? $_POST['id'] : '';
-$sql    ="SELECT * FROM PRODUCTOS WHERE ID_PRODUCTO = $id ";
+$sql    ="SELECT * FROM tblprod order by prod_name";
 $result =mysqli_query($con,$sql) or die ( "Algo ha ido mal en la consulta a la base de datos");
 
 while ($a = mysqli_fetch_assoc($result)) {
 
-    $json[]=$a;
+    $json["data"][]=$a;
     # code...
 }
 echo json_encode($json);
     
 // cerrar conexión de base de datos
-mysqli_close( $con );
+mysqli_free_result($result); //liberando memoria
+mysqli_close( $con ); //cerrando la conexion
  ?>
