@@ -26,8 +26,7 @@ if((isset($_POST['nombre']) ? $_POST['nombre'] : '') && (isset($_POST['cod']) ? 
 }
 
 else{
-	echo ("
-	<div class='alert alert-danger' role='alert'>
+	echo ("	<div class='alert alert-danger' role='alert'>
 							<button type='button' class='close' data-dismiss='alert'>&times;</button>
 							<strong>¡Error!</strong>						
 					</div>");

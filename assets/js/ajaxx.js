@@ -38,21 +38,16 @@ var dato=1;
             url: "inc/guardar_producto.php",
             data: datos,
             beforeSend:function (objeto) {
-                $("#enviando").html("Enviando....").fadeOut("slow");; 
-
+                $("#enviando").html("Enviando....").fadeOut("slow");
             },
             success: function (response) {
-                $("#resultado").html(response).fadeIn();
-               // location.href=("nuevo.php"); 
+                $("#resultado").html(response).fadeIn();              
             },
             error: function (err) {
-                alert("Disculpe, ocurrio un error");
-                //location.href=("nuevo.php");
+                alert("Disculpe, ocurrio un error");           
             }
-        });
-    
-        e.preventDefault();
-        
+        });    
+        e.preventDefault();        
     });
 
 
