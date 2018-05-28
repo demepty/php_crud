@@ -1,13 +1,4 @@
-<?php
-include('conn/conexion.php');
-$codigo=mysqli_query($con,"SELECT CONCAT('COD',MAX(id)) AS COD FROM `tblprod` ")or
-die("Problemas en el select:".mysqli_error($con));
-$in='';
-if($dato=mysqli_fetch_assoc($codigo)){
-    $in .='<input type="text" class="form-control" value="'.$dato['COD'].'"  disabled>';
-}
-  ?>     
-                 
+                
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +8,7 @@ if($dato=mysqli_fetch_assoc($codigo)){
     <header>
     <?php    include ("head.html");  ?>
     </header>
-    
+ 
     <div class="container menu">
     <form name="add_product" id="add_producto">
     <fieldset>
@@ -28,13 +19,13 @@ if($dato=mysqli_fetch_assoc($codigo)){
         </div>
         <div class="row">
             <div class="col-md-4 offset-md-2">
+                <input type="text" hidden value='1' name='op'>            
                 <label for=""> Nombre</label>
                 <input type="text" name="nombre" class="form-control" required>
             </div>
             <div class="col-md-4 ">
                 <label for=""> Codigo</label>
-<?php echo $in; ?>
-
+                <input type="text" class="form-control"  name="cod" >
             </div>
         </div>
         <div class="row">
@@ -70,6 +61,14 @@ if($dato=mysqli_fetch_assoc($codigo)){
     <div id="enviando"></div> 
     <div id="resultado"></div>
     </div>
+    <div class="container" style="padding-top:30px;">
+        <div class="row">
+            <div class="text-center col-md-4 offset-md-4 ">
+                <a href="index.php" class="btn btn-lg btn-primary test button3"><span class="fa fa-home"></span> Inicio</a>  
+            </div>
+        </div>
+          
+    </div> 
 
 <script src="assets/js/ajaxx.js"></script> 
 </body>
